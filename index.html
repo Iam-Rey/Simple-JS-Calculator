@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Please enter operation you want to perform -->
+    <!-- e.g +, -, *, / -->
+
+    <!-- Number 1 = -->
+    <!-- Number 2 = -->
+    <script>
+        //read operator
+        const operator = prompt('Please enter operation you want to perform e.g +, -, *, /')
+        //read numbers in the program
+        const num1 =parseFloat( prompt('Number 1: '));
+        const num2 =parseFloat( prompt('Number 2: '));
+
+        let result = 0;
+        if(isNaN(num1) || isNaN(num2)){
+            alert('Wrong Input! Refresh the page again and provide correct data.');
+        }else{
+            if(operator == '+'){
+                result = num1 + num2;
+            }else if(operator == '-'){
+                result = num1 - num2;
+            }else if(operator == '*'){
+                result = num1 * num2;
+            }else if(operator == '/'){
+                result = num1 / num2;
+            }
+            alert(result)
+        }
+        
+        
+
+
+
+    </script>
+</body>
+</html>
